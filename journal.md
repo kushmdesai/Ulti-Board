@@ -16,14 +16,14 @@ Hi this is my journal on making the Ultimate Keyboard. How did this all start? W
 This morning I woke up and knew that I would have to lock in and work hard because I hadn't really done anything for the past week except research some key things about making a keyboard and waiting for my gamepad to be accepted (I would appreaciate it if you could check if thats possible(That is if you can)). So today I decided that instead of resarching more about keys and leds to use I would just use the ones that were In the gamepad.
 
 I started by making the schematic, I knew that I wanted the layout to look something like my current keyboard but I did want to customize it a little bit.
-![My keyboard](/Images/IMG_0525.jpg)
+![My keyboard](/journal/Images/IMG_0525.jpg)
 
 **To**
 
-![Planned Layout](/Images/Screenshot%202025-05-31%20181554.png)
+![Planned Layout](/journal/Images/Screenshot%202025-05-31%20181554.png)
 
 Next to make the schematic I knew that I would need a lot of GPIO pins so I decided to use the Raspberry Pi Pico
-![Raspberry_Pi_Pico](/Images/image.png)
+![Raspberry_Pi_Pico](/journal/Images/image.png)
 since i already had the symbol for the sw_push and sk6812mini e led(i think thats what its called) I decided to make the grid for the switches and the leds.
 
 After I did this I wired all of them up. I wired the keys in an Matrix format and the leds in rows. I originally wanted each led to have a different color but quickly decided that that was kind of advanced and I would probably need a lot of GPIO pins. So then I decided to keep it so that each row would have its own din from the pi pico.
@@ -36,11 +36,11 @@ Next I wanted to add a oled to the keyboard I needed a symbol and footprint for 
 
 But I ran into a huge problem I RAN OUT OF GPIO PINS ;(. So i decided that instead of every row getting its own color i would give every 2 rows its own color.
 
-![Image of keys](/Images/Screenshot%202025-05-31%20190215.png)
+![Image of keys](/journal/Images/Screenshot%202025-05-31%20190215.png)
 
-![Image of leds](/Images/Screenshot%202025-05-31%20190229.png)
+![Image of leds](/journal/Images/Screenshot%202025-05-31%20190229.png)
 
-![Image of mcu and oled symbol](/Images/image2.png)
+![Image of mcu and oled symbol](/journal/Images/image2.png)
 
 ### Time Worked On This 5 Hours
 
@@ -60,15 +60,15 @@ Once I was done putting it all in the right spot I started to do the wiring. I j
 
 I opened the fooprint editor to find that the path at which it looked for the footprint was wrong in each key and led. I also realized that I had much to mant footprints to go in and change each one individually so I came up with another plan. I decided that I would open the file in VScode(which is where i am writing this rn) and make changes to the model prams. this would make it much easier because of the fact that I can use the shortcut CTRL + F to find and change all of them at the same time. I still took quite the entire day to get the model in the right spot but this is when I came to an very important realization. The model for the switch and the leds were slightly overlapping. I didn't want to take any chances with this and decided that I would take a break to find out some other choices that I have.
 
-![Image of wiring](/Images/Image%20of%20orignal%20wiring.png)
+![Image of wiring](/journal/Images/Image%20of%20orignal%20wiring.png)
 
-![Image of 3d view](/Images/Image%20of%20original%20pcb%20without%20models.png)
+![Image of 3d view](/journal/Images/Image%20of%20original%20pcb%20without%20models.png)
 
-![Image of 3d view with models](/Images/Image%20of%20original%20pcb%20with%20models.png)
+![Image of 3d view with models](/journal/Images/Image%20of%20original%20pcb%20with%20models.png)
 
-![Image of overlapp](/Images/primary%20original%20image%20of%20overlap.png)
+![Image of overlapp](/journal/Images/primary%20original%20image%20of%20overlap.png)
 
-![secondary image of overlap](/Images/secondary%20original%20image%20of%20overlap.png)
+![secondary image of overlap](/journal/Images/secondary%20original%20image%20of%20overlap.png)
 
 **Thats all for these three days see you next time.**
 
@@ -84,21 +84,56 @@ This probably took the longest time becasue I knew that if the led did not fit i
 After this it was time for the diodes I placed a couple and then I tried to get all of the footprints to show so that I can tell if there is some sort of overlap or something like that. It didn't look like there were any 3d models in this library so I decided to use the same ones that I was using earlier. I know had to go into each key's footprint and change the path of the 3d model to accomadate this. At this realization I decided to finish up for today and do some more work tomorrow.
 
 Done!
-![The Schmatic so far keys](/Images/New_schmatic_for_keys.png)
+![The Schmatic so far keys](/journal/Images/New_schmatic_for_keys.png)
 
 Done!
-![The Schmatic so far leds](/Images/New_Schmatic_for_leds.png)
+![The Schmatic so far leds](/journal/Images/New_Schmatic_for_leds.png)
 
 Done!
-![The Schmatic so far stil same](/Images/This_is_prob_still_the_same.png)
+![The Schmatic so far stil same](/journal/Images/This_is_prob_still_the_same.png)
 
 Done!
-![The pcb design so far finished](/Images/newPcb_finished.png)
+![The pcb design so far finished](/journal/Images/newPcb_finished.png)
 
-I am not done puttting these pieaces in the right spots
-![The pcb design so far Not finished](/Images/newPCB_notfinished.png)
+I am not done puttting these pieace in the right spots
+![The pcb design so far Not finished](/journal/Images/newPCB_notfinished.png)
 
 Still adding more 3d models
-![The pcb in 3d model so far](/Images/Newpcbwhatdone.png)
+![The pcb in 3d model so far](/journal/Images/Newpcbwhatdone.png)
 
 **Thats all for today see you tomorrow**
+
+## June 7
+
+Time Spent: 8 hours
+
+helllo so today I will put everything in the right spot wire it up and also get the 3d models in the right spot as well.
+
+So first lets get all of the models in. The diodes all were in the right place in the models I just had to move them in the pcb design. The leds were all in the right place as well. So first up I added the 3d model for the switches.
+
+To do this I copyed the path at which I had .wrl file and then open each switch in the footprint editor individually to do this. There was prob a way to do this quicker but I just locked in and did it all. next i put the footprint for the stabs around the keys that needed it. And then lastly I the .wrl file for the oled display. I also added keycaps for all the keys except the space bar becaus i coudn't find a 6u .step file.
+
+Next I will wire everything up. First up the leds, I just made a staight lines in each row for the power and gnd and then connected thw two ends on either side to the row above and lastly the top row with the pico. Then I wired the din dout according to my schematic with the three sections that i made (wasd and arrow keys, all alphanumerical keys, and modifier keys). Next I wired the swichtes up, the keys were wired in a vertical line and the diodes in the horizantal lined and lastly each key wired to its designated diode.
+
+![v1 3d model view](/journal/Images/v1_3d_model_view.png)
+
+
+![v1 wired pcb](/journal/Images/v1_wired_pcb.png)
+
+After I finished this I felt very energized and decided to tackle the code part next. I started by installing qmk on my wsl and then making a new keyboard. Next I edited the keymap.c to the following
+
+[keymap.c keymap]()
+/\
+gonna add http address to git file
+
+and also added the following macros.
+
+[keymap.c macros]()
+/\
+gonna add http address to git file
+
+This probably took me the longest because I haven't ever coded in c before but also because of the fact that in qmk you don't really code (except of macros) you just tell it which key is where and what it does. This reminds me that I also had to edit the keyboard.json to the following
+
+[keyboard.json]()
+/\
+gonna add http address to git file
