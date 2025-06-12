@@ -1,5 +1,5 @@
 ---
-title: "Ulit-Board"
+title: "Ulti-Board"
 author: "Kush Desai"
 description: "The ultimate keyboard for all your daily needs."
 created_at: "2025-05-31"
@@ -7,7 +7,7 @@ created_at: "2025-05-31"
 
 Hi this is my journal on making the Ultimate Keyboard. How did this all start? Well thats whats coming up.
 
-### Total Time Worked: 20 Hours
+### Total Time Worked: 28 Hours
 
 ## May 31
 
@@ -105,7 +105,7 @@ Still adding more 3d models
 
 ## June 7
 
-Time Spent: 8 hours
+**Time Spent: 8 hours**
 
 helllo so today I will put everything in the right spot wire it up and also get the 3d models in the right spot as well.
 
@@ -122,18 +122,28 @@ Next I will wire everything up. First up the leds, I just made a staight lines i
 
 After I finished this I felt very energized and decided to tackle the code part next. I started by installing qmk on my wsl and then making a new keyboard. Next I edited the keymap.c to the following
 
-[keymap.c keymap]()
-/\
-gonna add http address to git file
+[keymap.c keymap](https://github.com/kushmdesai/Ulti-Board/blob/main/journal/qmk%20code%20for%20journal/keymap_JUNE6.c)
 
 and also added the following macros.
 
-[keymap.c macros]()
-/\
-gonna add http address to git file
+[keymap.c macros](https://github.com/kushmdesai/Ulti-Board/blob/main/journal/qmk%20code%20for%20journal/keymap_JUNE6.c)
 
 This probably took me the longest because I haven't ever coded in c before but also because of the fact that in qmk you don't really code (except of macros) you just tell it which key is where and what it does. This reminds me that I also had to edit the keyboard.json to the following
 
-[keyboard.json]()
-/\
-gonna add http address to git file
+[keyboard.json](https://github.com/kushmdesai/Ulti-Board/blob/main/journal/qmk%20code%20for%20journal/keyboard_JUNE6.json)
+
+**Thats all for today see you tommorrow**
+
+## June 8-12
+
+:|
+
+:\
+
+;\
+
+:(
+
+;(
+
+I didn't do anythin :sad:
