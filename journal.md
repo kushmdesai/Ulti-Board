@@ -7,7 +7,7 @@ created_at: "2025-05-31"
 
 Hi this is my journal on making the Ultimate Keyboard. How did this all start? Well thats whats coming up.
 
-### Total Time Worked: 28 Hours
+### Total Time Worked: 32 Hours
 
 ## May 31
 
@@ -134,16 +134,64 @@ This probably took me the longest because I haven't ever coded in c before but a
 
 **Thats all for today see you tommorrow**
 
-## June 8-12
+## June 22 
 
-:|
+**Time Spent: 5 Hours**
 
-:\
+I took a very long brake in between because I was working on another project called [Mini-Safe](https://www.github.com/kushmdesai/Mini-Safe) but eventually decided to come back and quickly finish this project. So I realized that qmk only supports one rgb strip and I have three so I decided to redo the wiring for the pcb again. 
 
-;\
+After that I had another major realization. I choose to have a very strange set for the sizes of each key which are generally not supported. This is why I had to change my layout to a supported sizes such as a 6.25 u space bar instead of a 6u one.
 
-:(
+![new plan](/journal/Images/Screenshot%202025-06-22%20135133_edited.png)
 
-;(
+I had to change up the keyboard schematic a bit so that it matched the new plan for the keys diodes and the leds. Next I had to put all of the footprints in the right place which is really not a big task but I wanted to make sure that I put all the leds right with precision and accuracy. This was a problem becasuse while placing the keys I used the grid that we were instructed to use in the hackpad buide but for some reason they wouldn't go right on top of each other no matter what I did so I had to just use a smalled grid.
 
-I didn't do anythin :sad:
+After I finished putting all the compnenets in the right place it was very late and I was tired so I went to sleep.
+
+![new plan for rgbs](/journal/Images/New_plan_rgbschmeatic.png)
+
+![new plan for keys](/journal/Images/new_plan_keyschematic.png)
+
+**See You tommorrow**
+
+## June 23
+
+**Time spent: 3 Hours**
+
+Today I worked on wiring the pcb. I started of by wiring the keys together in columns and then connecting each key to their respective doides. Next I connected each diode to with the othere diodes in their respective row.
+
+Although I did have to make a change after wiring probably around half of the keys vertically. This did cause me some annoyance but the problem was a quick fix so I quickly moved on. The problem that had occured was the I had chosen the 1.75U footprint for the left shift keys instead of 2.25 Which was a pretty easy fix I just had to change the footprint and the wiring around it a little bit.
+
+After I finished that came that hardest part of wiring, the leds. Even though all you have to do is chain them the fact that they are smd and that there are sooo many of them just makes it a big hassle to do. But eventually I finished it again and hopefully I will not have to do this entire thing again. 
+
+![v2 pcb](/journal/Images/v2_pcb.png)
+
+![v2 pcb in 3d viewer front](/journal/Images/v2_pcb_in_3dview_front.png)
+
+![v2 pcb in 3d viewer back](/journal/Images/v2_pcb_in_2dview_back.png)
+
+**See You tommorrow
+
+## June 29
+
+**Time Spent: 10 Hours**
+
+Today I am gonna work on the firmware for the project. I am gonna use qmk to do this and I did start this a little bit before but becuase I changed the layout of my keyboard I had to also change my code from scratch(Yaay!). So I first started of by reading the [the qmk docs](https://qmk.fm/guide). After that I had a somewhat good idea of how to start of so I made a simple keymap and keyboard.json file for my keyboard.
+
+After that came probably the most difficult part. Adding the Oled. This is because there were so many cool features I wanted to add such as  pictures and animations and so much more. So I decided to add a startup animation that would show  the qmk logo and some hackclub branding. I originally wanted to show some highway branding but was unable to find a black and white versions so I settled with [Orpheas Flag](https://hackclub.com/branding).
+
+I also added a cool easter egg animation for "hacking the host computer". Another thing that I wanted to add but was unable to was a matrix rain screensaver that would activate while the computer was in screensaver mode.
+
+Lastly I used the screen to be able to tell my current WPM(which is usually in the 50s), which layer I am on, and wheather my caps lock is on or not.
+
+I also added another layer to my keyboard as it would be the one that contains all of the "MODS". This is where you can contol rgb animations, hue, sat, val(speed of animation), Volume, Skip forward and backward tracks, and go to boot mode. Something that I though was soo cool was [Velocikey](https://docs.qmk.fm/features/rgblight#velocikey).
+
+Velocikey allows you to change the speed of your rgb animations with the speed of your typing. That is so cool. I was absoulutly blown away by this and imediatly added this to my keyboard. I stil had to add the rgb lighting though. This was surprisingly easy companred to all the stuff I had todo on KMK with my last project. All I had to do was add the neccesary commands on rules.mk and config.h then add all of the rgb animations as keycodes.
+
+Now its time to show you the code [My amazing keyboard](/Code/highwayhc_ultiboard/)
+
+It took me a really long time to do so I hope you like it. :)
+
+Also I found this vid very helpful while coding the oled [Amazing Very Helpful Video About Oleds on QMK](https://www.youtube.com/watch?v=OJSOEStpPIo)
+
+**bye**
