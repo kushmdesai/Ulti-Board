@@ -7,7 +7,13 @@ created_at: "2025-05-31"
 
 Hi this is my journal on making the Ultimate Keyboard. How did this all start? Well thats whats coming up.
 
-### Total Time Worked: 32 Hours
+### Total Time Worked: 58 Hours
+
+_I had no Idea it took me so long to make this_
+
+_Its mostly cause I had to redo my pcb from scratch several times_
+
+_but still, that pretty sad :(_
 
 ## May 31
 
@@ -42,8 +48,6 @@ But I ran into a huge problem I RAN OUT OF GPIO PINS ;(. So i decided that inste
 
 ![Image of mcu and oled symbol](/journal/Images/image2.png)
 
-### Time Worked On This 5 Hours
-
 **See You Tomorrow**
 
 ## June 1
@@ -73,6 +77,7 @@ I opened the fooprint editor to find that the path at which it looked for the fo
 **Thats all for these three days see you next time.**
 
 ## June 6
+
 **Time Spent: 5 Hours**
 
 hii so i decided that I am gonna start everthing again from scratch. Yup I am just gonna delete everything. Why? well I found a very usefull library of footprints and symbols on [Github](https://github.com/ebastler/marbastlib), and I feel like the quality of my keyboard will be much better if I am to use that instead. I feel like this library will be so useful so thanks so much to ebastler for posting this
@@ -117,7 +122,6 @@ Next I will wire everything up. First up the leds, I just made a staight lines i
 
 ![v1 3d model view](/journal/Images/v1_3d_model_view.png)
 
-
 ![v1 wired pcb](/journal/Images/v1_wired_pcb.png)
 
 After I finished this I felt very energized and decided to tackle the code part next. I started by installing qmk on my wsl and then making a new keyboard. Next I edited the keymap.c to the following
@@ -134,11 +138,11 @@ This probably took me the longest because I haven't ever coded in c before but a
 
 **Thats all for today see you tommorrow**
 
-## June 22 
+## June 22
 
 **Time Spent: 5 Hours**
 
-I took a very long brake in between because I was working on another project called [Mini-Safe](https://www.github.com/kushmdesai/Mini-Safe) but eventually decided to come back and quickly finish this project. So I realized that qmk only supports one rgb strip and I have three so I decided to redo the wiring for the pcb again. 
+I took a very long brake in between because I was working on another project called [Mini-Safe](https://www.github.com/kushmdesai/Mini-Safe) but eventually decided to come back and quickly finish this project. So I realized that qmk only supports one rgb strip and I have three so I decided to redo the wiring for the pcb again.
 
 After that I had another major realization. I choose to have a very strange set for the sizes of each key which are generally not supported. This is why I had to change my layout to a supported sizes such as a 6.25 u space bar instead of a 6u one.
 
@@ -162,7 +166,7 @@ Today I worked on wiring the pcb. I started of by wiring the keys together in co
 
 Although I did have to make a change after wiring probably around half of the keys vertically. This did cause me some annoyance but the problem was a quick fix so I quickly moved on. The problem that had occured was the I had chosen the 1.75U footprint for the left shift keys instead of 2.25 Which was a pretty easy fix I just had to change the footprint and the wiring around it a little bit.
 
-After I finished that came that hardest part of wiring, the leds. Even though all you have to do is chain them the fact that they are smd and that there are sooo many of them just makes it a big hassle to do. But eventually I finished it again and hopefully I will not have to do this entire thing again. 
+After I finished that came that hardest part of wiring, the leds. Even though all you have to do is chain them the fact that they are smd and that there are sooo many of them just makes it a big hassle to do. But eventually I finished it again and hopefully I will not have to do this entire thing again.
 
 ![v2 pcb](/journal/Images/v2_pcb.png)
 
@@ -170,7 +174,7 @@ After I finished that came that hardest part of wiring, the leds. Even though al
 
 ![v2 pcb in 3d viewer back](/journal/Images/v2_pcb_in_2dview_back.png)
 
-**See You tommorrow
+\*\*See You tommorrow
 
 ## June 29
 
@@ -178,7 +182,7 @@ After I finished that came that hardest part of wiring, the leds. Even though al
 
 Today I am gonna work on the firmware for the project. I am gonna use qmk to do this and I did start this a little bit before but becuase I changed the layout of my keyboard I had to also change my code from scratch(Yaay!). So I first started of by reading the [the qmk docs](https://qmk.fm/guide). After that I had a somewhat good idea of how to start of so I made a simple keymap and keyboard.json file for my keyboard.
 
-After that came probably the most difficult part. Adding the Oled. This is because there were so many cool features I wanted to add such as  pictures and animations and so much more. So I decided to add a startup animation that would show  the qmk logo and some hackclub branding. I originally wanted to show some highway branding but was unable to find a black and white versions so I settled with [Orpheas Flag](https://hackclub.com/branding).
+After that came probably the most difficult part. Adding the Oled. This is because there were so many cool features I wanted to add such as pictures and animations and so much more. So I decided to add a startup animation that would show the qmk logo and some hackclub branding. I originally wanted to show some highway branding but was unable to find a black and white versions so I settled with [Orpheas Flag](https://hackclub.com/branding).
 
 I also added a cool easter egg animation for "hacking the host computer". Another thing that I wanted to add but was unable to was a matrix rain screensaver that would activate while the computer was in screensaver mode.
 
@@ -195,3 +199,19 @@ It took me a really long time to do so I hope you like it. :)
 Also I found this vid very helpful while coding the oled [Amazing Very Helpful Video About Oleds on QMK](https://www.youtube.com/watch?v=OJSOEStpPIo)
 
 **bye**
+
+## June 30
+
+**Time spent: 7 Hours**
+
+After yesterday I thought that I was atleast 2/3 done. I had finished the pcb and the code for it so I just had to do the case. Little did I know that I was wrong. The footprint I had used for the leds looked wrong now that I took a closer look. The footprint would be right if it was on the back but for some reson if was on the front. This is why not that I tried to get the sk6812 3d model I couldn't get the notch on one of the the legs lined up properly. After this relavation I decided to find a better footprint, and I quickly found one suprisingly by the same person in a newer repository.
+
+I quickly downloaded the repository as a zip and added it to my library table on kicad. Next I had to replace the symbols on the schematic, I had to do this because the pin numbers on the new footprint were in a different order. I very quickly did this and assigned each symbol the correct footprint so that I could now import the new symbols into the pcb editor and start wiring. First I deleted all of the old leds and replaced them with the new footprints. Then I started to wire them. This took me a really long time. I don't really now what to write here cause all I'm doing is wiring the same thing that I have already wired like 5 times before. I wired the 5V Gnd DIN and DOUT to their respective locations.
+
+I also moved the RSP PI PICO to the top left isntead of the bottom right, this is becasue if it was on the bottom then I would have to use a very long wire and the wire would have to go all the way across the board and to get to the computer but now that its on the back it should make things a little bit simpler. I'm done, YAY(for the fifth time).
+
+Now that I was finished with the pcb and firmware(as well as the fact that it was 11pm) instead of starting the CAD model right away I decided to add some silkscreen to make it look cool. I added the logos of KICAD, QMK, Fusion 360, and [Orpheas holding HC flag](https://hackclub.com/branding) with the words "Proudly Powered By:", I also added some ASCI art such as the words HACKER and HIGHWAY and some qr codes for my github repostiory and the highway website. I am probably gonna add even more stuff because I have a ton of empty space.
+
+![Picture of current pcb designb](/Journal/Images/currentpcbdesign_v3ithink.png)
+
+**ALR bye tommorrow I will work on the CAD model**
