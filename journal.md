@@ -215,3 +215,43 @@ Now that I was finished with the pcb and firmware(as well as the fact that it wa
 ![Picture of current pcb designb](/Journal/Images/currentpcbdesign_v3ithink.png)
 
 **ALR bye tommorrow I will work on the CAD model**
+
+# July 4
+
+** Time spent: 5 Hours
+
+Today I worked on and finished the CAD and it didn't really take me to long to do as its really just what I did for the hackpad at a bigger scale. I first made a sketch for the bottom part of the case.  I took the measurements from kicad but I will also import the step model just to be safe. After I did this I realized that the keyboard is way to big (407x1145mm) to print once so I split it in two.
+
+![bottom case](/journal/Images/bottomcase_1.png)
+
+I also had to figure out how I would keep the two sides together and I decided that the best way to do this would be to add more m3 screws. So I made a hole on the sides that would only be visible from the inside for the screws.
+
+![bottom case 2](/journal/Images/bottomcase_2.png)
+
+*Note: you can see it in the middle there and it is like this on both sides*
+
+Next I imported the pcb to see if it would fit. And it did. it had roughly 6mm space on the top and bottom and 3mm on the sides. This is should be fine becasue it will fit in and not move once the bottom and top plate have been attached.
+
+![bottom case 3](/journal/Images/bottomcase_3.png)
+
+Next I made the top case using a dxf file from aio3's website. I also kept the screws that connect the top and the bottom to be m3.
+
+![bottom case 4](/journal/Images/bottomcase_4.png)
+
+After that I made a hole on the case for the power wire and also the oled display.
+
+![bottom case 5](/journal/Images/bottomcase_5.png)
+
+![bottom case 6](/journal/Images/bottomcase_6.png)
+
+Lastly to connect the two top parts I added more holes for m3 screws.
+
+![bottom case 7](/journal/Images/bottomcase_7.png)
+
+I also made sure that it doesn't overlap with the top of the pcb as you can see in this image.
+
+![bottom case 8](/journal/Images/bottomcase_8.png)
+
+*Note: Its like this on both sides.*
+
+**And That is it. really its over I can't believe it. It has taken me so long to do this and its over. finnally over.**
