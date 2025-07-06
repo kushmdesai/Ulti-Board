@@ -7,7 +7,7 @@ created_at: "2025-05-31"
 
 Hi this is my journal on making the Ultimate Keyboard. How did this all start? Well thats whats coming up.
 
-### Total Time Worked: 58 Hours
+### Total Time Worked: 57 Hours
 
 _I had no Idea it took me so long to make this_
 
@@ -174,7 +174,7 @@ After I finished that came that hardest part of wiring, the leds. Even though al
 
 ![v2 pcb in 3d viewer back](/journal/Images/v2_pcb_in_2dview_back.png)
 
-\*\*See You tommorrow
+*See You tommorrow*
 
 ## June 29
 
