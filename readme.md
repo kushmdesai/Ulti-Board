@@ -12,7 +12,7 @@ I made this project because the keyboard I have now is very old and I need a new
 
 #### CAD
 
-![cad](/journal/Images/fullcasedesign.png)
+![cad](/journal/Images/finaldesignof3dmodel.png)
 
 #### PCB
 

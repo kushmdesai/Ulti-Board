@@ -7,7 +7,7 @@ created_at: "2025-05-31"
 
 Hi this is my journal on making the Ultimate Keyboard. How did this all start? Well thats whats coming up.
 
-### Total Time Worked: 57 Hours
+### Total Time Worked: 57 Hours and 45 mins
 
 _I had no Idea it took me so long to make this_
 
@@ -255,3 +255,15 @@ I also made sure that it doesn't overlap with the top of the pcb as you can see 
 *Note: Its like this on both sides.*
 
 **And That is it. really its over I can't believe it. It has taken me so long to do this and its over. finnally over.**
+
+# July 24
+
+It would be finish if I hadn't made some stupid mistakes such as 1 of the images in the readme was older and didnt match up so I had to replace it. I was told by @Logan Peterson that the qr codes would not work so I replaced them with silkscreen and made them bigger. I also removed the pcba from the bom as I was told that I couldn't do that for my leds.
+
+Next all I have to do is improve my case. I was actually thinking about doing this but didn't do it as I has already submitted my design so now I get to make it better. I think first up I will add a fillet around the corners and then engrave some cool designs into it.
+
+I first of started by adding the hackclub and qmk logo then added the name of the product and some other words on the other side. This took me roughly half an hour to do along with fixing the issues on my repo it added up to 45 mins. I checked back on the list of things I had to fix and that was it!
+
+**I am done!! again. I hope this is that last time and that I get approved now. lets see what happens**
+
+*is this project gets approved and I am also able to finish all my other projects then I will be able to get a 3D printer!!* <-- this is the last one I need.
