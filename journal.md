@@ -212,7 +212,7 @@ I also moved the RSP PI PICO to the top left isntead of the bottom right, this i
 
 Now that I was finished with the pcb and firmware(as well as the fact that it was 11pm) instead of starting the CAD model right away I decided to add some silkscreen to make it look cool. I added the logos of KICAD, QMK, Fusion 360, and [Orpheas holding HC flag](https://hackclub.com/branding) with the words "Proudly Powered By:", I also added some ASCI art such as the words HACKER and HIGHWAY and some qr codes for my github repostiory and the highway website. I am probably gonna add even more stuff because I have a ton of empty space.
 
-![Picture of current pcb designb](/Journal/Images/currentpcbdesign_v3ithink.png)
+![Picture of current pcb designb](/journal/Images/currentpcbdesign_v3ithink.png)
 
 **ALR bye tommorrow I will work on the CAD model**
 
