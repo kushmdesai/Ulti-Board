@@ -218,7 +218,7 @@ Now that I was finished with the pcb and firmware(as well as the fact that it wa
 
 # July 4
 
-** Time spent: 5 Hours
+**Time spent: 5 Hours**
 
 Today I worked on and finished the CAD and it didn't really take me to long to do as its really just what I did for the hackpad at a bigger scale. I first made a sketch for the bottom part of the case.  I took the measurements from kicad but I will also import the step model just to be safe. After I did this I realized that the keyboard is way to big (407x1145mm) to print once so I split it in two.
 
@@ -258,6 +258,8 @@ I also made sure that it doesn't overlap with the top of the pcb as you can see 
 
 # July 24
 
+**Time spent: 45 mins**
+
 It would be finish if I hadn't made some stupid mistakes such as 1 of the images in the readme was older and didnt match up so I had to replace it. I was told by @Logan Peterson that the qr codes would not work so I replaced them with silkscreen and made them bigger. I also removed the pcba from the bom as I was told that I couldn't do that for my leds.
 
 Next all I have to do is improve my case. I was actually thinking about doing this but didn't do it as I has already submitted my design so now I get to make it better. I think first up I will add a fillet around the corners and then engrave some cool designs into it.
@@ -266,4 +268,16 @@ I first of started by adding the hackclub and qmk logo then added the name of th
 
 **I am done!! again. I hope this is that last time and that I get approved now. lets see what happens**
 
-*is this project gets approved and I am also able to finish all my other projects then I will be able to get a 3D printer!!* <-- this is the last one I need.
+*is this project gets approved and I am also able to finish all my other projects then I will be able to get a 3D printer!!* <-- this is the last project I need to finsish for that!
+
+# July 27
+
+**Time Spent: 45 mins**
+
+I wasn't able to do that much the past two days but today I finished made my keyboard case look much much bettter. I added slanted rectangle grills on the side as well as triangle on the front and back that should increase friction with the table and also it looks cool. Lastly I also added colors to make it look absoulutly epic.
+
+![epicpic1](/journal/Images/epicpic1.png)
+
+![epicpic2](/journal/Images/epicpic2.png)
+
+**thanks so much!!!**

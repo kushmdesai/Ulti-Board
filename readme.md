@@ -12,7 +12,7 @@ I made this project because the keyboard I have now is very old and I need a new
 
 #### CAD
 
-![cad](/journal/Images/finaldesignof3dmodel.png)
+![cad](/journal/Images/epicpic1.png)
 
 #### PCB
 
@@ -22,7 +22,6 @@ I made this project because the keyboard I have now is very old and I need a new
 
 ![3dmodel](/journal/Images/newimageof3dmodel.png)
 
-*Note: this does does have 3d model for keys and key caps*
 
 | What I need       | Why I Need it                     | Where I got it from | Price  | Link            |
 | ----------------- | --------------------------------- | ------------------- | ------ | --------------- |
